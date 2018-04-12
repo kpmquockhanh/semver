@@ -63,7 +63,7 @@ PHẢI được đặt lại thành 0 khi phiên bản nhỏ được tăng lên
 
 1. Phiên bản chính X (X.y.z | X > 0) PHẢI được tăng nếu có những thay đổi không tương thích ngược lại được giới thiệu với public API. Nó cũng có thể bao gồm cả phiên bản phụ và thay đổi mức vá. Bản vá lỗi và phiên bản phụ PHẢI được đặt lại thành 0 khi phiên bản chính được tăng lên.
 
-1. Một phiên bản tiền phát hành có thể được biểu thị bằng cách thêm dấu gạch nối và hàng loạt ký hiệu nhận dạng dấu chấm ngay sau dấu  phiên bản vá. Các số nhận dạng PHẢI chỉ bao gồm chữ, số và dấu gạch ngang của ASCII
+1. Một phiên bản tiền phát hành có thể được biểu thị bằng cách thêm dấu gạch nối và hàng loạt ký hiệu nhận dạng **ngăn cách bởi** dấu chấm ngay sau dấu  phiên bản vá. Các số nhận dạng PHẢI chỉ bao gồm chữ, số và dấu gạch ngang của ASCII
 [0-9A-Za-z-]. Các số nhận dạng PHẢI KHÔNG trống. Số nhận dạng số PHẢI KHÔNG bao gồm bắt đầu bằng 0. Các phiên bản tiền phát hành có ư utieen thấp hơn phiên bản bình thường kết hợp.
 chỉ ra rằng phiên bản không ổn định và có thể không thỏa mãn yêu cầu về tính tương thích mong muốn như được biểu thị bởi các phiên bản bình thường. Ví dụ: 1.0.0-alpha, 1.0.0-alpha.1, 1.0.0-0.3.7, 71 1.0.0-x.7.z.92.
 
@@ -160,7 +160,7 @@ Một ví dụ đơn giản sẽ cho thấy cách phiên bản ngữ nghĩa có 
 Semantically Versioned gói có tên là "Ladder". Vào thời điểm Firetruck là
 tạo ra, Ladder là ở phiên bản 3.1.0. Vì Firetruck sử dụng một số chức năng
 lần đầu tiên được giới thiệu trong 3.1.0, bạn có thể chỉ định Ladder một cách an toàn
-phụ thuộc lớn hơn hoặc bằng 3.1.0 nhưng nhỏ hơn 4.0.0. Bây giờ thì ở đâu
+phụ thuộc lớn hơn hoặc bằng 3.1.0 nhưng nhỏ hơn 4.0.0. Bây giờ thì ~~ở đâu~~
 Phiên bản Ladder 3.1.1 và 3.2.0 trở nên có sẵn, bạn có thể thả chúng vào
 hệ thống quản lý gói hàng và biết rằng chúng sẽ tương thích với
 phần mềm phụ thuộc.
