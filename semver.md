@@ -38,9 +38,9 @@ và cách họ thay đổi truyền đạt ý nghĩa về mã bên dưới và n
 
 Các từ khoá "PHẢI", "KHÔNG CẦN", "BĂT BUỘC", "SẼ", "SẼ KHÔNG", "NÊN", "NÊN KHÔNG", "KHUYẾN NGHỊ", "CÓ THỂ", và "OPTIONAL" trong tài liệu này sẽ được giải thích như mô tả trong [RFC 2119](http://tools.ietf.org/html/rfc2119).
 
-1. Phần mềm sử dụng phiên bản ngữ nghĩa PHẢI khai báo một API công khai. API này
-có thể được khai báo trong chính nó hoặc tồn tại trong tài liệu.
-Tuy nhiên nó được thực hiện, nó nên được tốm lược và bao quát.
+1. Phần mềm sử dụng Semantic Versioning PHẢI khai báo một API công khai. API này
+có thể được khai báo trong chính code nó hoặc tồn tại trong tài liệu.
+Tuy nhiên khi hoàn thành, nó nên (SHOULD) phải chính xác và toàn diện.
 
 1. Một số phiên bản bình thường phải có dạng X.Y.Z nơi X, Y, và Z là
 số nguyên không âm, và KHÔNG ĐƯỢC chứa số 0 trước. X là
@@ -55,7 +55,7 @@ Mỗi phần tử PHẢI tăng theo số lượng. Ví dụ: 1.9.0 -> 1.10.0 -> 
 
 1. Phiên bản vá Z (x.y.Z | x > 0) PHẢI được gia tăng nếu chỉ sửa lỗi tương thích được giới thiệu. Sửa lỗi được định nghĩa là thay đổi nội bộ để sửa chữa hành vi không chính xác.
 
-1. Phiên bản Y (x.Y.z | x> 0) PHẢI được tăng lên nếu tương thích ngược mới được giới thiệu với public API. Nó phải là
+1. Phiên bản Y (x.Y.z | x> 0) PHẢI được tăng lên nếu tính năng mới tương thích với public API được giới thiệu. Nó phải là
 tăng nếu bất kỳ chức năng public API nào được đánh dấu là không dùng nữa. Nó có thể
 tăng nếu các tính năng hoặc cải tiến đáng kể mới được giới thiệu
 trong mã cá nhân. Nó CÓ THỂ bao gồm các thay đổi mức vá. Phiên bản vá
@@ -150,13 +150,13 @@ Mẫu ngữ pháp Backus-Naur cho các phiên bản SemVer hợp lệ
                | "y" | "z"
 
 
-Tại sao sử dụng phiên bản ngữ nghĩa?
+Tại sao sử dụng Semantic Versioning?
 ----------------------------
 
-Đây không phải là 1 ý kiến mới hay đột phá nào cả. Trên thực tế, bạn hẳn là làm điều gì gần giống như vậy rồi. Vấn đề là "gần giống" ở đây không đủ tốt. Nếu không tuân thủ theo 1 tập các đặc điểm kỉ thuật chính thức, các số phiên bản thực chất sẽ vô nghĩa cho việc quản lý sự phụ thuộc. Bằng cách đưa các định nghĩa rõ ràng cho các ý tưởng trên, nó trở nên dễ dàng trong việc liên kết các ý tưởng của bạn tới các người dùng phần mềm. Ngay khi những ý định được rõ ràng, Các đặc điểm kĩ thuật phụ thuốc linh động ( nhưng không quá linh động) cuối cùng cũng được hình thành.
+Đây không phải là 1 ý kiến mới hay đột phá nào cả. Trên thực tế, bạn hẳn là làm điều gì gần giống như vậy rồi. Vấn đề là "gần giống" ở đây không đủ tốt. Nếu không tuân thủ theo 1 tập các đặc điểm kỉ thuật chính thức, các số phiên bản thực chất sẽ vô nghĩa cho việc quản lý sự phụ thuộc. Bằng cách đưa các định nghĩa rõ ràng cho các ý tưởng trên, nó trở nên dễ dàng trong việc liên kết các ý tưởng của bạn tới các người dùng phần mềm. Ngay khi những ý định được rõ ràng, Các đặc điểm kĩ thuật phụ thuộc linh động ( nhưng không quá linh động) cuối cùng cũng được hình thành.
 
 Một ví dụ đơn giản sẽ cho thấy cách phiên bản ngữ nghĩa có thể làm cho sự phụ thuộc
-địa ngục là một điều của quá khứ. Xem xét một thư viện có tên "Firetruck". Nó đòi hỏi một
+khó khăn là một điều của quá khứ. Xem xét một thư viện có tên "Firetruck". Nó đòi hỏi một
 Semantically Versioned gói có tên là "Ladder". Vào thời điểm Firetruck là
 tạo ra, Ladder là ở phiên bản 3.1.0. Vì Firetruck sử dụng một số chức năng
 lần đầu tiên được giới thiệu trong 3.1.0, bạn có thể chỉ định Ladder một cách an toàn
@@ -172,7 +172,7 @@ Phiên bản ngữ nghĩa cung cấp cho bạn một cách hợp lí để phát
 gói mà không phải cuộn phiên bản mới của gói phụ thuộc, tiết kiệm cho bạn
 thời gian và rắc rối.
 
-Nếu tất cả điều này là mong muốn, tất cả những gì bạn cần làm để bắt đầu sử dụng phiên bản ngũ nghĩa là tuyên bố rằng bạn đang làm như vậy và sau đó làm theo các quy tắc. Liên kết
+Nếu tất cả điều này là mong muốn, tất cả những gì bạn cần làm để bắt đầu sử dụng Semantic Versioning là tuyên bố rằng bạn đang làm như vậy và sau đó làm theo các quy tắc. Liên kết
 đến trang web này từ README của bạn để những người khác biết các quy tắc và có thể hưởng lợi từ nó.
 
 
