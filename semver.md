@@ -51,7 +51,7 @@ Mỗi phần tử PHẢI tăng theo số lượng. Ví dụ: 1.9.0 -> 1.10.0 -> 
 
 1. Phiên bản chính zero (0.y.z) dành cho sự phát triển ban đầu. Mọi thứ có thể thay đổi bất cứ lúc nào. API công khai KHÔNG NÊN được coi là ổn định.
 
-1. Phiên bản 1.0.0 định nghĩa API công khai. Cách thức mà số phiên bản được tăng lên sau khi bản phát hành này phụ thuộc vào API công khai này và cách nó 56 thay đổi.
+1. Phiên bản 1.0.0 định nghĩa API công khai. Cách thức mà số phiên bản được tăng lên sau khi bản phát hành này phụ thuộc vào API công khai này và cách nó thay đổi.
 
 1. Phiên bản vá Z (x.y.Z | x > 0) PHẢI được gia tăng nếu chỉ sửa lỗi tương thích được giới thiệu. Sửa lỗi được định nghĩa là thay đổi nội bộ để sửa chữa hành vi không chính xác.
 
