@@ -40,7 +40,7 @@ Các từ khoá "PHẢI", "KHÔNG CẦN", "BĂT BUỘC", "SẼ", "SẼ KHÔNG", 
 
 1. Phần mềm sử dụng phiên bản ngữ nghĩa PHẢI khai báo một API công khai. API này
 có thể được khai báo trong chính nó hoặc tồn tại trong tài liệu.
-Tuy nhiên nó được thực hiện, nó nên được chính xác và toàn diện.
+Tuy nhiên nó được thực hiện, nó nên được tốm lược và bao quát.
 
 1. Một số phiên bản bình thường phải có dạng X.Y.Z nơi X, Y, và Z là
 số nguyên không âm, và KHÔNG ĐƯỢC chứa số 0 trước. X là
