@@ -36,7 +36,7 @@ và cách họ thay đổi truyền đạt ý nghĩa về mã bên dưới và n
 Đặc tả phiên bản ngữ nghĩa (SemVer)
 ------------------------------------------
 
-Các từ khoá "PHẢI", "KHÔNG CẦN", "BĂT BUỘC", "SẼ", "SẼ KHÔNG", "NÊN", "NÊN KHÔNG", "KHUYẾN NGHỊ", "MAY", và "OPTIONAL" trong tài liệu này sẽ được giải thích như mô tả trong [RFC 2119](http://tools.ietf.org/html/rfc2119).
+Các từ khoá "PHẢI", "KHÔNG CẦN", "BĂT BUỘC", "SẼ", "SẼ KHÔNG", "NÊN", "NÊN KHÔNG", "KHUYẾN NGHỊ", "CÓ THỂ", và "OPTIONAL" trong tài liệu này sẽ được giải thích như mô tả trong [RFC 2119](http://tools.ietf.org/html/rfc2119).
 
 1. Phần mềm sử dụng phiên bản ngữ nghĩa PHẢI khai báo một API công khai. API này
 có thể được khai báo trong chính nó hoặc tồn tại trong tài liệu.
